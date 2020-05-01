@@ -1,3 +1,4 @@
+var chalk = require('chalk');
 function Horse(name){
 	this.name = name;
 	this.age = 1;
@@ -5,5 +6,7 @@ function Horse(name){
 }
 
 Horse.prototype.run = function() {
-	console.log('Horse run and shout: '+chalk.red('hi hi hi @@'));
+	console.log(chalk.blue(this.name) + ' run and shout: ' + chalk.red('hi hi hi @@'));
 };
+
+module.exports = Horse;
