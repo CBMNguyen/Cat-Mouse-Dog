@@ -1,4 +1,7 @@
-var Horse = require('./horse.js');
-var horse = new Horse('Xich Tho');
+var Dog = require('./dog.js');
+var Cat = require('./cat.js')
 
-horse.run();
+var dog = new Dog('Cau Vang');
+var cat = new Cat('tiny');
+
+console.log(dog.eat(cat));

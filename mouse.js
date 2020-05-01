@@ -1,10 +1,12 @@
-function Mouse(){
-	name =  "Cat";
-	age =  1;
-	weight = 1;
-	color = "orange";
-	stomach = [];
+function Mouse(name){
+	this.name =  name;
+	this.age =  1;
+	this.weight = 1;
+	this.color = "orange";
+	this.stomach = [];
 }
 Mouse.prototype.eat = function(cat) {
 	this.stomach.push(cat);
 };
+
+module.exports = Mouse;
