@@ -8,5 +8,8 @@ function Horse(name){
 Horse.prototype.run = function() {
 	console.log(chalk.blue(this.name) + ' run and shout: ' + chalk.red('hi hi hi @@'));
 };
-
+Horse.eat = function() {
+	console.log('vegetable');
+	console.log('leaf');
+};
 module.exports = Horse;
